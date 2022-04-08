@@ -364,14 +364,14 @@
                     <navigationItem key="navigationItem" title="Результат" id="O9e-An-BK9">
                         <barButtonItem key="rightBarButtonItem" style="done" id="bDZ-BQ-Ucf">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="d6q-uN-bEt">
-                                <rect key="frame" x="229" y="5" width="75" height="34.5"/>
+                                <rect key="frame" x="229" y="8" width="75" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                <connections>
+                                    <segue destination="pBX-xo-UZz" kind="unwind" unwindAction="unwindWithSegue:" id="1Oj-ct-pJV"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <segue destination="pBX-xo-UZz" kind="unwind" unwindAction="unwindWithSegue:" id="4KE-zx-LEU"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
