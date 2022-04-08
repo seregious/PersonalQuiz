@@ -8,20 +8,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Intro View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pT9-al-Syo">
-                                <rect key="frame" x="16" y="20" width="36" height="40"/>
+                                <rect key="frame" x="16" y="20" width="41" height="43"/>
                                 <attributedString key="attributedText">
                                     <fragment content="🐶">
                                         <attributes>
-                                            <font key="NSFont" size="36" name=".AppleColorEmojiUI"/>
+                                            <font key="NSFont" metaFont="system" size="36"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -29,11 +29,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCO-kD-iYS">
-                                <rect key="frame" x="268" y="420" width="36" height="40"/>
+                                <rect key="frame" x="263" y="417" width="41" height="43"/>
                                 <attributedString key="attributedText">
                                     <fragment content="🐱">
                                         <attributes>
-                                            <font key="NSFont" size="36" name=".AppleColorEmojiUI"/>
+                                            <font key="NSFont" metaFont="system" size="36"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -41,11 +41,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caL-mW-dFv">
-                                <rect key="frame" x="16" y="420" width="36" height="40"/>
+                                <rect key="frame" x="16" y="417" width="41" height="43"/>
                                 <attributedString key="attributedText">
                                     <fragment content="🐢">
                                         <attributes>
-                                            <font key="NSFont" size="36" name=".AppleColorEmojiUI"/>
+                                            <font key="NSFont" metaFont="system" size="36"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -53,11 +53,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBL-xT-jMR">
-                                <rect key="frame" x="268" y="20" width="36" height="40"/>
+                                <rect key="frame" x="263" y="20" width="41" height="43"/>
                                 <attributedString key="attributedText">
                                     <fragment content="🐰">
                                         <attributes>
-                                            <font key="NSFont" size="36" name=".AppleColorEmojiUI"/>
+                                            <font key="NSFont" metaFont="system" size="36"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -65,21 +65,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PNR-nk-MOD">
-                                <rect key="frame" x="61.5" y="207" width="197" height="66"/>
+                                <rect key="frame" x="55" y="206" width="210" height="68"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-W4-fHO">
-                                        <rect key="frame" x="0.0" y="0.0" width="197" height="27"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="210" height="29"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Какое ты животное">
                                                 <attributes>
-                                                    <font key="NSFont" size="24" name=".SFNS-Regular"/>
+                                                    <font key="NSFont" metaFont="system" size="24"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KI3-DQ-VrQ">
-                                        <rect key="frame" x="40.5" y="35" width="116.5" height="31"/>
+                                        <rect key="frame" x="47" y="37" width="116.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Начать опрос"/>
                                         <connections>
@@ -114,7 +114,7 @@
         <!--Вопрос №-->
         <scene sceneID="Epf-lJ-fp0">
             <objects>
-                <viewController id="QU9-t9-xP9" sceneMemberID="viewController">
+                <viewController id="QU9-t9-xP9" customClass="QuestionsViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wtS-jm-5A5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,21 +126,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="QU9-t9-xP9" eventType="touchUpInside" id="Dna-tU-jIk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Up-Pf-ARA">
                                         <rect key="frame" x="0.0" y="48" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="QU9-t9-xP9" eventType="touchUpInside" id="lqs-0D-GeH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8z-7e-CEP">
                                         <rect key="frame" x="0.0" y="96" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="QU9-t9-xP9" eventType="touchUpInside" id="E8S-KG-pCx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xni-BJ-3mi">
                                         <rect key="frame" x="0.0" y="144" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="QU9-t9-xP9" eventType="touchUpInside" id="3mu-IN-Mey"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <variation key="heightClass=compact-widthClass=compact" baselineRelativeArrangement="NO"/>
@@ -209,6 +221,9 @@
                                         <rect key="frame" x="0.0" y="188" width="288" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Ответить"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="QU9-t9-xP9" eventType="touchUpInside" id="azq-9Y-kId"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -239,6 +254,9 @@
                                         <rect key="frame" x="0.0" y="82.5" width="288" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Ответить"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="QU9-t9-xP9" eventType="touchUpInside" id="MRy-i1-UhN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -283,7 +301,27 @@
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="qzB-0c-HMt"/>
                     <connections>
-                        <segue destination="Mze-98-vzF" kind="show" identifier="showResult" id="wwg-bV-Y7u"/>
+                        <outlet property="multipleStackView" destination="dUf-GC-Taa" id="UTZ-zB-lAP"/>
+                        <outlet property="questionLabel" destination="A9f-0M-VqY" id="x01-FR-xCF"/>
+                        <outlet property="questionProgressView" destination="6Bh-k8-547" id="gS0-kn-vHJ"/>
+                        <outlet property="rangedSlider" destination="bfQ-CH-Uvq" id="TNS-dq-3HG"/>
+                        <outlet property="rangedStackView" destination="kh3-1o-TQg" id="tG8-8B-AAP"/>
+                        <outlet property="singleStackView" destination="74J-Uo-ji4" id="oD2-K1-tFx"/>
+                        <outletCollection property="singleButtons" destination="1xh-bP-nd3" collectionClass="NSMutableArray" id="Y42-1a-5HS"/>
+                        <outletCollection property="singleButtons" destination="2Up-Pf-ARA" collectionClass="NSMutableArray" id="sz6-za-U7m"/>
+                        <outletCollection property="singleButtons" destination="l8z-7e-CEP" collectionClass="NSMutableArray" id="ZTP-b0-0kX"/>
+                        <outletCollection property="singleButtons" destination="Xni-BJ-3mi" collectionClass="NSMutableArray" id="gOv-UH-bQk"/>
+                        <outletCollection property="multipleLabels" destination="Tmb-my-Kzn" collectionClass="NSMutableArray" id="5NK-0N-48h"/>
+                        <outletCollection property="multipleLabels" destination="fXw-h0-y6h" collectionClass="NSMutableArray" id="KfJ-oj-Euh"/>
+                        <outletCollection property="multipleLabels" destination="T9b-aR-YbL" collectionClass="NSMutableArray" id="RxG-Ca-Wz0"/>
+                        <outletCollection property="multipleLabels" destination="ply-3L-vv4" collectionClass="NSMutableArray" id="yNg-bm-bZm"/>
+                        <outletCollection property="rangedLabels" destination="NDO-vE-OU5" collectionClass="NSMutableArray" id="jhk-OT-XGy"/>
+                        <outletCollection property="rangedLabels" destination="e79-LQ-apC" collectionClass="NSMutableArray" id="dr1-8p-RcM"/>
+                        <outletCollection property="multipleSwitches" destination="IGt-Q4-puN" collectionClass="NSMutableArray" id="Zlf-zv-ia1"/>
+                        <outletCollection property="multipleSwitches" destination="lXe-nW-FcE" collectionClass="NSMutableArray" id="7Fz-F9-dYA"/>
+                        <outletCollection property="multipleSwitches" destination="nxO-rU-YZJ" collectionClass="NSMutableArray" id="0Cg-zh-jRH"/>
+                        <outletCollection property="multipleSwitches" destination="pfU-hG-E4C" collectionClass="NSMutableArray" id="HGE-bT-pRg"/>
+                        <segue destination="Mze-98-vzF" kind="show" identifier="showResult" id="i61-RS-tXi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5z-JU-h3H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -293,16 +331,29 @@
         <!--Результат-->
         <scene sceneID="D66-qI-qQA">
             <objects>
-                <viewController id="Mze-98-vzF" sceneMemberID="viewController">
+                <viewController id="Mze-98-vzF" customClass="ResultViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8zT-Nc-QaT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="hUA-lP-rlr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Результат" id="O9e-An-BK9"/>
+                    <navigationItem key="navigationItem" title="Результат" id="O9e-An-BK9">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="bDZ-BQ-Ucf">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="d6q-uN-bEt">
+                                <rect key="frame" x="229" y="5" width="75" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                            </button>
+                            <connections>
+                                <segue destination="pBX-xo-UZz" kind="unwind" unwindAction="unwindWithSegue:" id="w52-ih-4F4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cz4-cv-0Xc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="pBX-xo-UZz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2239" y="85"/>
         </scene>

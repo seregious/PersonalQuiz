@@ -9,14 +9,14 @@ import Foundation
 
 struct Question {
     let title: String
-    let answer: [Answer]
+    let answers: [Answer]
     let type: ResponseType
     
     static func getQuenstions() -> [Question] {
         [
             Question(
                 title: "Какую пищу вы предпочитаете?",
-                answer: [
+                answers: [
                     Answer(title: "Стейк", animal: .dog),
                     Answer(title: "Рыба", animal: .cat),
                     Answer(title: "Морковь", animal: .rabbit),
@@ -26,7 +26,7 @@ struct Question {
             ),
             Question(
                 title: "Что вам нравится больше?",
-                answer: [
+                answers: [
                     Answer(title: "Плавать", animal: .dog),
                     Answer(title: "Спать", animal: .cat),
                     Answer(title: "Обниматься", animal: .rabbit),
@@ -36,7 +36,7 @@ struct Question {
             ),
             Question(
                 title: "Любите ли вы поездки на машнине",
-                answer: [
+                answers: [
                     Answer(title: "Обожаю", animal: .dog),
                     Answer(title: "Ненавижу", animal: .cat),
                     Answer(title: "Не Нервничаю", animal: .rabbit),
