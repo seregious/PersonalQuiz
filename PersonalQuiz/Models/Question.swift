@@ -66,13 +66,13 @@ enum Animal: Character {
     var definition: String {
         switch self {
         case .dog:
-            return ""
+            return "Поздравляем! Вы в душе собака!"
         case .cat:
-            return ""
+            return "Поздравляем! Вы в душе кот!"
         case .turtle:
-            return ""
+            return "Поздравляем! Вы в душе черепаха!"
         case .rabbit:
-            return ""
+            return "Поздравляем! Вы в душе кролик!"
         }
     }
 }

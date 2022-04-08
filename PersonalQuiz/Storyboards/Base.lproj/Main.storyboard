@@ -335,8 +335,31 @@
                     <view key="view" contentMode="scaleToFill" id="8zT-Nc-QaT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="C3b-YT-wst">
+                                <rect key="frame" x="124.5" y="203" width="71" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nm-AR-oLt">
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAw-z1-Yu4">
+                                        <rect key="frame" x="0.0" y="44" width="71" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hUA-lP-rlr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C3b-YT-wst" firstAttribute="centerX" secondItem="8zT-Nc-QaT" secondAttribute="centerX" id="F8S-Hc-3fy"/>
+                            <constraint firstItem="C3b-YT-wst" firstAttribute="centerY" secondItem="8zT-Nc-QaT" secondAttribute="centerY" id="qL1-8w-5c1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="O9e-An-BK9">
                         <barButtonItem key="rightBarButtonItem" style="done" id="bDZ-BQ-Ucf">
@@ -345,12 +368,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                <connections>
+                                    <segue destination="pBX-xo-UZz" kind="unwind" unwindAction="unwindWithSegue:" id="jUh-X7-1c4"/>
+                                </connections>
                             </button>
                             <connections>
-                                <segue destination="pBX-xo-UZz" kind="unwind" unwindAction="unwindWithSegue:" id="w52-ih-4F4"/>
+                                <segue destination="pBX-xo-UZz" kind="unwind" unwindAction="unwindWithSegue:" id="pOv-vn-gaQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="animalTypeLabel" destination="2nm-AR-oLt" id="cgb-cg-Uk4"/>
+                        <outlet property="descriptionTypeLabel" destination="xAw-z1-Yu4" id="ZTI-Ry-zUZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cz4-cv-0Xc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="pBX-xo-UZz" userLabel="Exit" sceneMemberID="exit"/>
