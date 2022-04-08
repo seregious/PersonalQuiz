@@ -368,12 +368,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Done"/>
-                                <connections>
-                                    <segue destination="pBX-xo-UZz" kind="unwind" unwindAction="unwindWithSegue:" id="jUh-X7-1c4"/>
-                                </connections>
                             </button>
                             <connections>
-                                <segue destination="pBX-xo-UZz" kind="unwind" unwindAction="unwindWithSegue:" id="pOv-vn-gaQ"/>
+                                <segue destination="pBX-xo-UZz" kind="unwind" unwindAction="unwindWithSegue:" id="4KE-zx-LEU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
